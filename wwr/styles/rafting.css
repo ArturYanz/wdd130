@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #483102;
+    --secondary-color: #7b5112;
+    --third-color: #246516;
+    --black-border: 1px solid rgb(0 0 0);
+    --heading-font: "Permanent Marker", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-color1: #fff;
+
+
+
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, body, footer {
+  width: 840px;
+  margin: 0 auto;
+
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+header {
+  background-color: var(--third-color);
+  font-family: 'Permanent Marker';
+}
+
+header img {
+  width: 250px;
+  height: auto;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--body-font);
+  color: var(--text-color1)
+  
+}
+
+main img {
+  width: 1120px;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #246516;
+  color: #fff;
+}
+
+
+section {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  position: relative;
+  top: -50px;
+}
+
+section p {
+  padding: 0px;
+}
+
+article {
+  position: relative;
+  top: -100px;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  
+}
+
+article img {
+  width: 200px;
+  height: auto;
+}
+
+
+footer {
+  border-top: var(--black-border);
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+
+}
+
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Class Section */
+
+
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.hero article img {
+  position: relative;
+  float: right;
+  width: 125px;
+  top: -5px;
+}
+
