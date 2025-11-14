@@ -3,7 +3,7 @@
     --secondary-color: #7b5112;
     --third-color: #246516;
     --black-border: 1px solid rgb(0 0 0);
-    --heading-font: "Permanent Marker", "Times New Roman", serif;
+    --heading-font: "Arial", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --text-color1: #fff;
 
@@ -32,7 +32,7 @@ nav, p, section, article {
 
 header {
   background-color: var(--third-color);
-  font-family: 'Permanent Marker';
+  font-family: var(--heading-font);
 }
 
 header img {
@@ -67,8 +67,7 @@ h1 {
 section {
   padding: 1rem;
   background-color: var(--primary-color);
-  position: relative;
-  top: -50px;
+
 }
 
 section p {
@@ -76,10 +75,11 @@ section p {
 }
 
 article {
-  position: relative;
-  top: -100px;
+  position: absolute;
+  top:400px;
   padding: 1rem;
   background-color: var(--primary-color);
+  opacity: 85%;
   
 }
 
@@ -108,13 +108,6 @@ footer img {
 
 
 
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 
 .hero {
   position: relative;
@@ -126,11 +119,12 @@ footer img {
   height: auto;
 }
 
-
 .hero article img {
-  position: relative;
   float: right;
   width: 125px;
-  top: -5px;
+}
+.hero article {
+  position: absolute;
+ 
 }
 
