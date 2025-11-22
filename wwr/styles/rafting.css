@@ -2,6 +2,7 @@
     --primary-color: #483102;
     --secondary-color: #7b5112;
     --third-color: #246516;
+    --fourth-color: #33210a;
     --black-border: 1px solid rgb(0 0 0);
     --heading-font: "Arial", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -77,14 +78,18 @@ h1 {
 
 
 h2 {
+  height: 50px;
+  width: auto;
   text-align: center;
+  background-color: var(--third-color);
+  opacity: 80%;
  
 }
 
 
 section {
   padding: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--fourth-color);
 
 }
 
@@ -93,9 +98,11 @@ section p {
 
 }
 
-section figcaption {
+figcaption {
+  padding: 2px;
   text-align: center;
   font-size: smaller;
+  background-color: #246516aa;
 }
 
 article {
@@ -149,6 +156,7 @@ footer img {
 .hero article img {
   float: right;
   width: 125px;
+  border: var(--black-border);
 }
 .hero article {
   position: absolute;
@@ -191,7 +199,7 @@ footer img {
 
 
 .history {
-  padding-top: 1rem;
+  padding-top: 0.6rem;
 }
 
 .history-grid {
@@ -203,7 +211,10 @@ footer img {
   width: 400px;
   height: auto;
   grid-column: 2;
-  padding: 2.5rem 1rem 1rem 1rem;
+  padding: 16px;
+  margin-top: 24px;
+  background-color: var(--primary-color);
+  border: var(--black-border);
 }
 
 .p1 {
@@ -217,7 +228,8 @@ footer img {
 
 
 .adventure {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
 }
 
 .river-flex {
@@ -226,8 +238,27 @@ footer img {
   justify-content: space-evenly;
 }
 
-.rivers {
+.rivers, .claro {
   width: 100px;
   height: auto;
+  padding: 5px;
+  background-color: #7b5112;
+  border: var(--black-border);
+  
+}
+
+
+.claro{
+  width: 110px;
+}
+
+.austral {
+  position: relative;
+  left: -10px;
+}
+
+.maipo {
+  position: relative;
+  left: -20px;
   
 }
