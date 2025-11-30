@@ -1,0 +1,63 @@
+
+
+h1 {
+    
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}   
+
+main {
+    margin: auto;
+    max-width: 600px
+}
+
+form {
+    background-color: #eee;
+    border-radius: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form, div {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
+    
+
+}
+
+
+
+
+.samplecode {
+    background-color: darkslategray;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 20rem;
+    padding: .5rem;
+    position: relative;
+    left: 150px;
+    border-radius: .5rem;
+
+
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border-radius: .2rem;
+    width: auto;
+    display: flex;
+    align-self: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    
+}
+
+label, input, textarea, select, button {
+    margin: .5rem;
+
+}
