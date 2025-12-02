@@ -1,12 +1,13 @@
 :root {
-    --primary-color: #483102;
-    --secondary-color: #654310;
-    --third-color: #246516;
-    --fourth-color: #33210a;
-    --black-border: 1px solid rgb(0 0 0);
-    --heading-font: "Arial", "Times New Roman", serif;
-    --body-font: Arial, Helvetica, sans-serif;
-    --text-color1: #fff;
+  --primary-color: #483102;
+  --secondary-color: #654310;
+  --third-color: #246516;
+  --fourth-color: #33210a;
+  --fifth-color: #073608;
+  --black-border: 1px solid rgb(0 0 0);
+  --heading-font: "Arial", "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+  --text-color1: #fff;
 
 
 
@@ -20,13 +21,18 @@
   box-sizing: border-box;
 }
 
-header, body, footer {
+header,
+body,
+footer {
   width: 840px;
   margin: 0 auto;
 
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -35,13 +41,13 @@ nav, p, section, article {
 
 
 
-nav a{
+nav a {
   text-decoration: none;
   padding: 2rem;
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-color1);
-  
+
 }
 
 header {
@@ -58,7 +64,6 @@ body {
   background-color: var(--secondary-color);
   font-family: var(--body-font);
   color: var(--text-color1)
-  
 }
 
 main img {
@@ -84,7 +89,7 @@ h2 {
   text-align: center;
   background-color: var(--third-color);
   opacity: 80%;
- 
+
 }
 
 
@@ -108,11 +113,11 @@ figcaption {
 
 article {
   position: absolute;
-  top:400px;
+  top: 400px;
   padding: 1rem;
   background-color: var(--primary-color);
   opacity: 85%;
-  
+
 }
 
 
@@ -134,15 +139,49 @@ footer img {
 }
 
 
-.socialmedia a {
-  text-decoration: none;
-  
+
+form {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
+
+input {
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+}
+
+textarea {
+  margin-top: .5rem;
+}
+
+
+button {
+  background-color: black;
+  color: var(--text-color1);
+  padding: 5px;
+  margin-top: .5rem;
+  grid-column: 2;
+  border-radius: .5rem;
+
+}
+
 
 /* Class Section */
 
+.contactbutton {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+.socialmedia a {
+  text-decoration: none;
 
+}
 
 .hero {
   position: relative;
@@ -159,9 +198,10 @@ footer img {
   width: 125px;
   border: var(--black-border);
 }
+
 .hero article {
   position: absolute;
- 
+
 }
 
 .grid {
@@ -176,7 +216,7 @@ footer img {
   display: flex;
   list-style: none;
   white-space: nowrap;
-  
+
 }
 
 .navigation li {
@@ -195,7 +235,7 @@ footer img {
   display: flex;
   list-style: none;
   justify-content: flex-end;
-  
+
 }
 
 
@@ -205,7 +245,7 @@ footer img {
 
 .history-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .history-img {
@@ -239,17 +279,18 @@ footer img {
   justify-content: space-evenly;
 }
 
-.rivers, .claro {
+.rivers,
+.claro {
   width: 100px;
   height: auto;
   padding: 5px;
   background-color: #7b5112;
   border: var(--black-border);
-  
+
 }
 
 
-.claro{
+.claro {
   width: 110px;
 }
 
@@ -261,5 +302,67 @@ footer img {
 .maipo {
   position: relative;
   left: -20px;
-  
+
+}
+
+.company {
+  display: block;
+  font-size: medium;
+  text-align: center;
+
+}
+
+.radio {
+  margin: 1rem;
+
+}
+
+
+.workers {
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+}
+
+.worker-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.contacth2 {
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.h2info {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.contact {
+  background-color: var(--fifth-color);
+}
+
+.form-size {
+  grid-column: 4;
+}
+
+.map {
+  grid-column: 2;
+  grid-row: 2;
+
+}
+
+.map-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 350px 100px;
+  margin-bottom: 5rem;
+}
+
+.contactsection {
+  margin-top: 2rem;
 }
