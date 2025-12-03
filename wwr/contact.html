@@ -26,48 +26,44 @@
 
     <main class="contact">
         <div class="company">
-            <h2 class="h2info">Wild Forest Rafting Contact</h2>
-            <p>Los Alamos 1234, Santiago, Chile</p>
-            <p>Phone: +56 9 5879 6230</p>
-            <p>Email: info@wildforest.com</p>
-
+            <h1 class="h1info">Wild Forest Rafting Contact</h1>
+            <div class="contactcontainer">
+                <p>Los Alamos 1234, Santiago, Chile</p>
+                <p>Phone: +56 9 5879 6230</p>
+                <p>Email: info@wildforest.com</p>
+            </div>
         </div>
 
         <div class="map-form">
             <iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d680.0248499753367!2d-70.733880221454!3d-33.43503812950072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1764623280887!5m2!1ses-419!2scl"
-                width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                width="350" height="300"  allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
             <div class="form-size">
                 <form>
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name:</label>
+                        <input class="contactname-email" type="text" id="name" name="name" required placeholder="John Doe">
                     </div>
 
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                        <label for="email">Email:</label>
+                        <input class="contactname-email" type="email" id="email" name="email" required placeholder="example@gmail.com">
                     </div>
 
                     <div>
-                        <legend>Message Purpose:</legend>
-                        <div class="radio">
-                            <div>
-                                <label for="inquiry">General Inquiry</label>
-                                <input type="radio" id="choice1" name="subject" value="inquiry">
+                        <fieldset>
+                            <legend>Message Purpose:</legend>
+                            <div class="radio">
+                                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+                                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>           
+                    
+
                             </div>
-                            <div>
-                                <label for="reservation">Reservation Question</label>
-                                <input type="radio" id="choice2" name="subject" value="reservation">
-                            </div>
-                            <div>
-                                <label for="suggestion">Website Suggestion</label>
-                                <input type="radio" id="choice3" name="subject" value="suggestion">
-                            </div>
-                        </div>
+                        </fieldset>
 
                         <div>
                             <label for="message">Message:</label>
@@ -83,7 +79,7 @@
                     </div>
 
                     <div class="contactbutton">
-                        <button type="submit">Submit Info</button>
+                        <button type="submit">Send to the Wild!</button>
                     </div>
                 </form>
             </div>
@@ -95,19 +91,19 @@
             <h2 class="contacth2">We are here to help you</h2>
             <div class="worker-flex">
                 <figure>
-                    <img class="workers" src="images/raftingworker1 (1).jpg" alt="Adventurer">
+                    <img class="workers" src="images/raftingworker1.jpg" alt="Juan Ferrada">
                     <figcaption class="workersinfo">Juan Ferrada - Adventure Designer</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img class="workers" src="images/raftingworker2 (1).jpg" alt="CEO">
+                    <img class="workers" src="images/raftingworker2.jpg" alt="Javiera Baeza">
                     <figcaption>Javiera Baeza - CEO</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img class="workers" src="images/raftingworker3 (1).jpg" alt="Influencer">
+                    <img class="workers" src="images/raftingworker3.jpg" alt="Ramón Gonzales">
                     <figcaption>Ramón Gonzales - S.M. Manager</figcaption>
                 </figure>
 

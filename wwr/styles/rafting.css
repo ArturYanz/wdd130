@@ -170,6 +170,10 @@ button {
 
 }
 
+fieldset {
+  margin-bottom: 1rem;
+  border-color: black;
+}
 
 /* Class Section */
 
@@ -306,15 +310,19 @@ button {
 }
 
 .company {
-  display: block;
+  display: grid;
   font-size: medium;
   text-align: center;
-
+  grid-template-rows: 100px 1fr;
 }
 
 .radio {
-  margin: 1rem;
-
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -364,5 +372,20 @@ button {
 }
 
 .contactsection {
-  margin-top: 2rem;
+  margin-top: 10rem;
+}
+
+.h1info {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+
+.contactcontainer {
+  grid-row: 2;
+}
+
+.contactname-email, textarea {
+  border-radius: .5rem;
+  padding: 10px;
 }
