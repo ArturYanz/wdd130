@@ -8,6 +8,7 @@
   --heading-font: "Arial", "Times New Roman", serif;
   --body-font: Arial, Helvetica, sans-serif;
   --text-color1: #fff;
+  --home-colors: rgb(219, 205, 15);
 
 
 
@@ -38,11 +39,14 @@ article {
 }
 
 
-
+a {
+  text-decoration: none;
+  color: var(--text-color1);
+}
 
 
 nav a {
-  text-decoration: none;
+  
   padding: 2rem;
   font-size: 1rem;
   font-weight: 700;
@@ -94,9 +98,10 @@ h2 {
 
 
 section {
-  padding: 1rem;
+  max-width: 800px;
+  padding: rem;
   background-color: var(--fourth-color);
-
+  margin: 0 0 0 1rem;
 }
 
 section p {
@@ -109,6 +114,7 @@ figcaption {
   text-align: center;
   font-size: smaller;
   background-color: #246516aa;
+  margin-bottom: 1rem;
 }
 
 article {
@@ -128,8 +134,11 @@ article img {
 
 
 footer {
+  margin-top: .75rem;
   border-top: var(--black-border);
   text-align: left;
+  background-color: var(--third-color);
+  margin-bottom: 0
 }
 
 footer img {
@@ -285,29 +294,20 @@ fieldset {
 
 .rivers,
 .claro {
-  width: 100px;
+  width: 200px;
   height: auto;
   padding: 5px;
   background-color: #7b5112;
   border: var(--black-border);
-
+  border-radius: 5px;
 }
 
 
 .claro {
-  width: 110px;
+  width: 220px;
 }
 
-.austral {
-  position: relative;
-  left: -10px;
-}
 
-.maipo {
-  position: relative;
-  left: -20px;
-
-}
 
 .company {
   display: grid;
@@ -388,4 +388,317 @@ fieldset {
 .contactname-email, textarea {
   border-radius: .5rem;
   padding: 10px;
+}
+
+.about-h1 {
+  font-size: 40px;
+  opacity: 80%;
+  margin-top: 400px;
+}
+
+.homeh1 {
+  background-color: #073608;
+  font-size: 80px;
+  opacity: 80%;
+}
+
+
+.eNewsletter { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  font-size: x-large; 
+  align-items: center; 
+  
+}
+.eNewsletter p {
+  grid-row: 1/4;
+  margin-top: 5rem;
+  
+}
+
+.eEmail {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.eName {
+  margin-top: .5rem;
+  grid-column: 2;
+  text-align: center;
+}
+  
+
+
+.slogan {
+  font-size: 50px;
+  width: 750px;
+  height: auto;
+  margin-left: .75rem;
+
+}
+
+.slogan-img { 
+  width: 600px; 
+  height: auto; 
+  margin-top: 1rem;
+  margin-left: 5rem;
+  padding: 2px;
+  background-color: var(--third-color);
+  border-radius: 1rem;
+
+}
+
+.slogan-p {
+  background-color: var(--home-colors);
+  color: black;
+  max-width: 600px;
+  padding: 1.5rem;
+  border: var(--black-border);
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 20px;
+  font-size: 20px;
+  margin-left: 2rem;
+}
+
+
+.slogan-caption {
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+
+.history-book, .campfire {
+  width: 400px;
+  margin-left: 1rem;
+  padding: 2px;
+  background-color: #246516;
+}
+
+.history-book {
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 30px;
+  grid-row: 1;
+  margin-top: 5rem;
+}
+
+.history-book-grid {
+  display: grid;
+
+}
+
+
+.campfire {
+  margin-top: 2rem;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 30px;
+  grid-column: 1;
+}
+
+.campfire-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.home-links-a, .home-links-b {
+  background-color: var(--home-colors);
+  color: black;
+  font-size: 20px;
+  padding: 1rem;
+  border: 3px solid black;
+  border-radius: .75em;
+}
+
+
+.home-links-a {
+  grid-column: 2;
+  margin-left: 3rem;
+}
+
+.home-links-b {
+  grid-column: 2;
+  margin-left: 3rem;
+}
+
+.trip-s {
+  text-align: center;
+  background-color: var(--home-colors);
+  color: black;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.trips-h1 {
+  font-size: 50px;
+  border: 4px solid black;
+  max-width: 800px;
+  position: relative;
+  top: 25px;
+  
+ 
+}
+
+.f-pack {
+  width: 400px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.pack-p1 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+.grid-trips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  align-items: center;
+}
+
+.trip-s-2 {
+  text-align: center;
+  background-color: lightseagreen;
+  color: black;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.pack-p2 {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.f-pack-2 {
+  width: 400px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+.trip-s-3 {
+  text-align: center;
+  background-color: lightcoral;
+  color: black;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  grid-column: 1;
+  grid-row: 3;
+}
+.f-pack-3 {
+  width: 400px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.pack-p3 {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+
+.trip-s, .trip-s-2, .trip-s-3, .f-pack
+.f-pack-2, .f-pack-3 {
+  margin-right: 1rem;
+}
+
+.tier-b {
+  background-color: lightseagreen;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  border: 3px solid black
+}
+
+.tier-costs, .tier-season, .tier-age, .tier-days {
+  
+  border-top: 2px dashed black;
+}
+
+
+.tier-a {
+  background-color: var(--home-colors);
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  border: 3px solid black
+}
+
+
+.tier-s {
+  background-color: lightcoral;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  border: 3px solid black
+}
+
+.tier-link {
+  color: black;
+}
+
+
+.final-questions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  
+}
+
+
+.final-p1 {
+  background-color: var(--third-color);
+  text-align: end;
+  border-bottom-left-radius: 1rem;
+  grid-column: 2;
+  margin-bottom: 2rem;
+}
+
+.final-p2 {
+  background-color: var(--home-colors);
+  grid-column: 3;
+  border-top-right-radius: 1rem;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  margin-bottom: 2rem;
+}
+
+.contactbutton-home {
+  grid-column: 2;
+  text-align: center;
+  
+}
+
+.contactbutton-home button {
+  background-color: var(--home-colors);
+  color: black;
+  font-size: 20px;
+  
 }
