@@ -99,7 +99,6 @@ h2 {
 
 section {
   max-width: 800px;
-  padding: rem;
   background-color: var(--fourth-color);
   margin: 0 0 0 1rem;
 }
